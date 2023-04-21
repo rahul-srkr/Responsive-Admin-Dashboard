@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e0e0e0;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  tfoot{
+    background-color: red;
+  }
+
+  @media (max-width:600px){
+    ::-webkit-scrollbar{
+     display: none;
+    }
+  }
+
+  @media (max-width:330px){
+    .fc{
+      font-size: .8em;
+    }
+  }
+
+
+  .expand:has(input[type="checkbox"]:checked){
+    margin: 1rem 0;
+    border-color:transparent;
+  
+  }
